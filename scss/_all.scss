@@ -103,3 +103,39 @@
     }
   }
 }
+
+.section-work{
+  padding: 40px 0;
+  h1{
+    font-size: 18px;
+  }
+  &-grid{
+    display: flex;
+    padding: 40px 0 0;
+    div{
+      flex-basis: 33.33%;
+      padding-left: 10px;
+      &:first-child{
+        padding-left: 0px !important;
+      }
+    }
+    img{
+      @extend %fullWidth;
+    }
+    h1{
+      font-size: 18px;
+      color: $color-primary;
+      padding: 18px 0;
+    }
+    h2{
+      font-size: 13px;
+      color: $color-tertiary;
+      padding-bottom: 15px;
+    }
+    p{
+      font-size: 14px;
+      color: $color-footer-heading;
+      line-height: 30px;
+    }
+  }
+}
