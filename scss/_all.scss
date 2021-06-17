@@ -60,7 +60,7 @@
         padding: 10px 10px;
         border: 1px solid $color-bg;
         outline: none;
-        border-radius: 5px;
+        border-radius: 2px;
         font-size: 14px;
         margin: 16px auto;
         display: block;
@@ -74,6 +74,32 @@
           transition: all .5s;
         }
       }
+    }
+  }
+}
+
+.services-section{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  border-bottom: 1px solid $color-border;
+  div{
+    flex-basis: 25%;
+    padding: 0 11px;
+    h1{
+      font-size: 18px;
+      color: $color-primary;
+      @extend %centerSpace;
+      padding: 15px 0;
+    }
+    p{
+      font-size: 14px;
+      @extend %centerSpace;
+      color: $color-services;
+    }
+    img{
+      margin: 0 auto;
+      display: block;
     }
   }
 }
