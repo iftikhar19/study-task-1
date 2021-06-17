@@ -1,15 +1,15 @@
 @import "variables";
-
-.container{
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
 #header{
-  @include flexLayout;
-    img{
-      width: 80px;
-    }
+  background-color: $color-header;
+  &-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+  }
+  .logo{
+    width: 130px;
+  }
   #nav{
     ul{
       display: flex;
@@ -20,8 +20,9 @@
           text-decoration: none;
           color: black;
           font-size: 18px;
+          text-transform: uppercase;
           &:hover{
-            color: red;
+            color: $color-hover;
             transition: all .5s;
           }
         }
