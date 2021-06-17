@@ -121,7 +121,7 @@ h1, h2, p, button, a {
       flex-basis: 33.33%;
       padding-left: 10px; }
       .section-work-grid div:first-child {
-        padding-left: 0px !important; }
+        padding-left: 0 !important; }
     .section-work-grid h1 {
       font-size: 18px;
       color: #4e4e4e;
