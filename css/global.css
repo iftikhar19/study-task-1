@@ -14,6 +14,9 @@ body {
 h1, h2, p, button, a {
   font-family: "Roboto Slab", serif; }
 
+.d-flex {
+  display: flex; }
+
 .services-section div h1, .services-section div p {
   text-align: center; }
 
@@ -95,7 +98,7 @@ h1, h2, p, button, a {
   display: flex;
   justify-content: space-between;
   padding: 50px 0;
-  border-bottom: 1px solid #d9d9d9; }
+  border-bottom: 1px solid #6b6767; }
   .services-section div {
     flex-basis: 25%;
     padding: 0 11px; }
@@ -137,3 +140,45 @@ h1, h2, p, button, a {
 
 .section-testmonials {
   background-color: #e5e5e5; }
+
+#footer {
+  background-color: #000;
+  padding: 50px 0; }
+  #footer-grid {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #6b6767; }
+    #footer-grid div {
+      flex-basis: 25%;
+      padding-left: 30px; }
+      #footer-grid div:first-child {
+        padding-left: 0 !important; }
+      #footer-grid div h1 {
+        font-size: 18px;
+        color: #6c6c6c;
+        padding-bottom: 25px; }
+      #footer-grid div h2 {
+        color: #cacaca;
+        font-size: 14px;
+        padding-bottom: 25px;
+        font-weight: 300; }
+        #footer-grid div h2 span {
+          display: block;
+          padding-top: 9px; }
+        #footer-grid div h2 i {
+          color: #a89574;
+          font-size: 10px;
+          margin: 5px 6px 0 0; }
+      #footer-grid div p {
+        font-size: 14px;
+        color: #cacaca;
+        padding-bottom: 10px; }
+        #footer-grid div p i {
+          color: #a89574;
+          font-size: 10px;
+          margin: 5px 6px 0 0; }
+  #footer-copyright {
+    max-width: 1140px;
+    margin: 0 auto;
+    color: #cacaca;
+    padding-top: 50px; }

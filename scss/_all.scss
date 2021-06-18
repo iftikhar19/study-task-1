@@ -143,3 +143,56 @@
 .section-testmonials{
   background-color: $color-header;
 }
+
+#footer{
+  background-color: $color-footer-bg;
+  padding: 50px 0;
+  &-grid{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-border;
+    div{
+      flex-basis: 25%;
+      padding-left: 30px;
+      &:first-child{
+        padding-left: 0 !important;
+      }
+      h1{
+        font-size: 18px;
+        color: $color-footer-heading;
+        padding-bottom: 25px;
+      }
+      h2{
+        color: $color-footer;
+        font-size: 14px;
+        padding-bottom: 25px;
+        font-weight: 300;
+        span{
+          display: block;
+          padding-top: 9px;
+        }
+        i{
+          color: $color-icon;
+          font-size: 10px;
+          margin: 5px 6px 0 0;
+        }
+      }
+      p{
+        font-size: 14px;
+        color: $color-footer;
+        padding-bottom: 10px;
+        i{
+          color: $color-icon;
+          font-size: 10px;
+          margin: 5px 6px 0 0;
+        }
+      }
+    }
+  }
+  &-copyright{
+    max-width: 1140px;
+    margin: 0 auto;
+    color: $color-footer;
+    padding-top: 50px;
+  }
+}
