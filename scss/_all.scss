@@ -1,10 +1,7 @@
 @import "variables";
 #header{
   background-color: $header-bg-color;
-  &-flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .header-flex{
     padding: 16px 0;
   }
   .logo{
@@ -12,9 +9,8 @@
   }
   #nav{
     ul{
-      display: flex;
+      list-style: none;
       li{
-        list-style: none;
         margin: 0 20px;
         a{
           text-decoration: none;
@@ -29,50 +25,50 @@
       }
     }
   }
-  .banner{
-    background-image: url("../images/banner.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-    height: calc(100vh - 67px);
-    position: relative;
-    &-centering{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      h1{
-        font-size: 40px;
-        color: $banner-heading-color;
-        margin-bottom: 10px;
-      }
-      h2{
-        font-size: 32px;
-        text-align: center;
-        color: $banner-sub-heading-color;
-        margin-bottom: 10px;
-      }
-      button{
-        background-color: $banner-btn-bg-color;
-        color: $banner-btn-text-color;
-        padding: 10px 10px;
-        border: 1px solid $banner-btn-bg-color;
-        outline: none;
-        border-radius: 2px;
-        font-size: 14px;
-        margin: 16px auto;
-        display: block;
-        cursor: pointer;
-        text-transform: uppercase;
+}
 
-        &:hover{
-          background-color: $banner-btn-bg-hover-color;
-          color: $banner-btn-text-hover-color;
-          border: 1px solid $banner-btn-bg-hover-color;
-          transition: all .5s;
-        }
+.banner{
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  height: calc(100vh - 62px);
+  position: relative;
+  margin-bottom: 50px;
+  &-centering{
+    flex-direction: column;
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 100%;
+    h1{
+      font-size: 40px;
+      color: $banner-heading-color;
+      margin-bottom: 10px;
+    }
+    h2{
+      font-size: 32px;
+      text-align: center;
+      color: $banner-sub-heading-color;
+      margin-bottom: 10px;
+    }
+    .btn-primary{
+      background-color: $banner-btn-bg-color;
+      color: $banner-btn-text-color;
+      padding: 10px 10px;
+      border: 1px solid $banner-btn-bg-color;
+      outline: none;
+      border-radius: 2px;
+      font-size: 14px;
+      margin: 16px auto;
+      display: block;
+      cursor: pointer;
+      text-transform: uppercase;
+      &:hover{
+        background-color: $banner-btn-bg-hover-color;
+        color: $banner-btn-text-hover-color;
+        border: 1px solid $banner-btn-bg-hover-color;
+        transition: all .5s;
       }
     }
   }
@@ -81,20 +77,19 @@
 .services-section{
   display: flex;
   justify-content: space-between;
-  padding: 50px 0;
   border-bottom: 1px solid $services-border-color;
-  div{
+  margin-bottom: 40px;
+  .col{
     flex-basis: 25%;
     padding: 0 11px;
-    h1{
+    margin-bottom: 50px;
+    h3{
       font-size: 18px;
       color: $services-heading-color;
-      @extend %centerSpace;
       padding: 15px 0;
     }
     p{
       font-size: 14px;
-      @extend %centerSpace;
       color: $body-text-color;
     }
     img{
@@ -108,30 +103,30 @@
 }
 
 .section-work{
-  padding: 40px 0;
-  h1{
+  margin-bottom: 40px;
+  h3{
     font-size: 18px;
     color: $services-heading-color;
+    margin-bottom: 40px;
   }
   &-grid{
-    display: flex;
-    padding: 40px 0 0;
-    div{
+    .col{
       flex-basis: 33.33%;
       padding-left: 10px;
       &:first-child{
-        padding-left: 0 !important;
+        padding-left: 0;
       }
     }
     img{
-      @extend %fullWidth;
+      height: 280px;
+      object-fit: cover;
     }
-    h1{
+    h4{
       font-size: 18px;
       color: $services-heading-color;
       padding: 18px 0;
     }
-    h2{
+    h5{
       font-size: 13px;
       color: $work-sub-heading-color;
       padding-bottom: 15px;
@@ -151,34 +146,36 @@
 #footer{
   background-color: $footer-bg-color;
   padding: 50px 0;
-  &-grid{
-    display: flex;
-    justify-content: space-between;
+  .footer-grid{
     border-bottom: 1px solid $services-border-color;
-    div{
+    .footer-col{
       flex-basis: 25%;
       padding-left: 30px;
       &:first-child{
-        padding-left: 0 !important;
+        padding-left: 0;
       }
-      h1{
+      .title{
         font-size: 18px;
         color: $footer-heading-color;
-        padding-bottom: 25px;
       }
-      h2{
-        color: $footer-text-color;
-        font-size: 14px;
-        padding-bottom: 25px;
-        font-weight: 300;
-        span{
-          display: block;
-          padding-top: 9px;
-        }
-        i{
-          color: $footer-icon-color;
-          font-size: 10px;
-          margin: 5px 6px 0 0;
+      ul{
+        list-style: none;
+        margin-top: 30px;
+        li{
+          color: $footer-text-color;
+          font-size: 14px;
+          padding-bottom: 25px;
+          display: flex;
+          font-weight: 300;
+          span{
+            display: block;
+            padding-top: 9px;
+          }
+          i{
+            color: $footer-icon-color;
+            font-size: 10px;
+            margin: 5px 6px 0 0;
+          }
         }
       }
       p{
