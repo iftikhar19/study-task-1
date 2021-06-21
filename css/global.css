@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap");
-.services-section div h1, .services-section div p {
-  text-align: center; }
-
-.section-work-grid img {
-  width: 100%;
-  height: 280px; }
-
 * {
   margin: 0;
   padding: 0;
