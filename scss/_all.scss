@@ -82,7 +82,7 @@
   display: flex;
   justify-content: space-between;
   padding: 50px 0;
-  border-bottom: 1px solid $color-border;
+  border-bottom: 1px solid $services-border-color;
   div{
     flex-basis: 25%;
     padding: 0 11px;
@@ -111,6 +111,7 @@
   padding: 40px 0;
   h1{
     font-size: 18px;
+    color: $services-heading-color;
   }
   &-grid{
     display: flex;
@@ -132,12 +133,12 @@
     }
     h2{
       font-size: 13px;
-      color: $color-tertiary;
+      color: $work-sub-heading-color;
       padding-bottom: 15px;
     }
     p{
       font-size: 14px;
-      color: $color-footer-heading;
+      color: $body-text-color;
       line-height: 30px;
     }
   }
@@ -153,7 +154,7 @@
   &-grid{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid $color-border;
+    border-bottom: 1px solid $services-border-color;
     div{
       flex-basis: 25%;
       padding-left: 30px;

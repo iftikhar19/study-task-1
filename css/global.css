@@ -112,7 +112,8 @@ h1, h2, p, button, a {
 .section-work {
   padding: 40px 0; }
   .section-work h1 {
-    font-size: 18px; }
+    font-size: 18px;
+    color: #4e4e4e; }
   .section-work-grid {
     display: flex;
     padding: 40px 0 0; }
@@ -131,7 +132,7 @@ h1, h2, p, button, a {
       padding-bottom: 15px; }
     .section-work-grid p {
       font-size: 14px;
-      color: #6c6c6c;
+      color: #616161;
       line-height: 30px; }
 
 .section-testmonials {
