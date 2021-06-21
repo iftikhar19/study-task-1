@@ -58,7 +58,7 @@ h1, h2, p, button, a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     height: calc(100vh - 67px);
     position: relative; }
     #header .banner-centering {
