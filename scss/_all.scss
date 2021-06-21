@@ -1,6 +1,6 @@
 @import "variables";
 #header{
-  background-color: $color-header;
+  background-color: $header-bg-color;
   &-flex{
     display: flex;
     justify-content: space-between;
@@ -18,11 +18,11 @@
         margin: 0 20px;
         a{
           text-decoration: none;
-          color: black;
+          color: $nav-link-color;
           font-size: 16px;
           text-transform: uppercase;
           &:hover{
-            color: $color-hover;
+            color: $nav-link-hover-color;
             transition: all .5s;
           }
         }
@@ -141,7 +141,7 @@
 }
 
 .section-testmonials{
-  background-color: $color-header;
+  background-color: $header-bg-color;
 }
 
 #footer{
