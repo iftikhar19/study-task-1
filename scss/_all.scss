@@ -88,18 +88,21 @@
     padding: 0 11px;
     h1{
       font-size: 18px;
-      color: $color-primary;
+      color: $services-heading-color;
       @extend %centerSpace;
       padding: 15px 0;
     }
     p{
       font-size: 14px;
       @extend %centerSpace;
-      color: $color-services;
+      color: $body-text-color;
     }
     img{
       margin: 0 auto;
       display: block;
+      width: 90px;
+      height: 90px;
+      border-radius: 100%;
     }
   }
 }
@@ -124,7 +127,7 @@
     }
     h1{
       font-size: 18px;
-      color: $color-primary;
+      color: $services-heading-color;
       padding: 18px 0;
     }
     h2{
