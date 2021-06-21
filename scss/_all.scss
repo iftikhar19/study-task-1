@@ -149,7 +149,7 @@
 }
 
 #footer{
-  background-color: $color-footer-bg;
+  background-color: $footer-bg-color;
   padding: 50px 0;
   &-grid{
     display: flex;
@@ -163,11 +163,11 @@
       }
       h1{
         font-size: 18px;
-        color: $color-footer-heading;
+        color: $footer-heading-color;
         padding-bottom: 25px;
       }
       h2{
-        color: $color-footer;
+        color: $footer-text-color;
         font-size: 14px;
         padding-bottom: 25px;
         font-weight: 300;
@@ -176,17 +176,17 @@
           padding-top: 9px;
         }
         i{
-          color: $color-icon;
+          color: $footer-icon-color;
           font-size: 10px;
           margin: 5px 6px 0 0;
         }
       }
       p{
         font-size: 14px;
-        color: $color-footer;
+        color: $footer-text-color;
         padding-bottom: 10px;
         i{
-          color: $color-icon;
+          color: $footer-icon-color;
           font-size: 10px;
           margin: 5px 6px 0 0;
         }
@@ -196,7 +196,7 @@
   &-copyright{
     max-width: 1140px;
     margin: 0 auto;
-    color: $color-footer;
+    color: $footer-text-color;
     padding-top: 50px;
   }
 }
