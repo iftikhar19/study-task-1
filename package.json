@@ -1,0 +1,20 @@
+{
+  "name": "study-task-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass -o css scss/global.scss -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iftikhar19/study-task-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iftikhar19/study-task-1/issues"
+  },
+  "homepage": "https://github.com/iftikhar19/study-task-1#readme"
+}
