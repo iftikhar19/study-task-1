@@ -45,20 +45,20 @@
       height: 100%;
       h1{
         font-size: 40px;
-        color: $color-banner-heading;
+        color: $banner-heading-color;
         margin-bottom: 10px;
       }
       h2{
         font-size: 32px;
         text-align: center;
-        color: $color-banner-sub-heading;
+        color: $banner-sub-heading-color;
         margin-bottom: 10px;
       }
       button{
-        background-color: $color-banner-btn-bg;
-        color: $color-banner-btn-text;
+        background-color: $banner-btn-bg-color;
+        color: $banner-btn-text-color;
         padding: 10px 10px;
-        border: 1px solid $color-banner-btn-bg;
+        border: 1px solid $banner-btn-bg-color;
         outline: none;
         border-radius: 2px;
         font-size: 14px;
@@ -68,9 +68,9 @@
         text-transform: uppercase;
 
         &:hover{
-          background-color: $color-banner-btn-bg-hover;
-          color: $color-banner-btn-text-hover;
-          border: 1px solid $color-banner-btn-bg-hover;
+          background-color: $banner-btn-bg-hover-color;
+          color: $banner-btn-text-hover-color;
+          border: 1px solid $banner-btn-bg-hover-color;
           transition: all .5s;
         }
       }
