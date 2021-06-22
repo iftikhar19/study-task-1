@@ -26,6 +26,20 @@
                     <li><a href="#">contact</a></li>
                 </ul>
             </nav>
+            <i class="fas fa-bars hamburger-menu" id="hamburger-hide"></i>
+        </div>
+        <div class="sidenav">
+            <a href="javascript:void(0)" class="closebtn">&times;</a>
+            <nav id="nav-mobile">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">features</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main id="main">
@@ -37,7 +51,7 @@
             </div>
         </section>
         <div class="container">
-            <div class="services-section">
+            <div class="services-section d-flex justify-content-between flex-wrap">
                 <div class="col">
                     <img src="images/icon-1.png" alt="icon 1"/>
                     <h3 class="text-center">Pellentesque</h3>
@@ -67,7 +81,7 @@
             </div>
             <div class="section-work">
                 <h3>Our Latest Works</h3>
-                <div class="section-work-grid d-flex">
+                <div class="section-work-grid d-flex flex-wrap">
                     <div class="col">
                         <img class="img-responsive" src="images/img-1.png" alt="img 1"/>
                         <div>
@@ -136,54 +150,66 @@
         </section>
     </main>
     <footer id="footer">
-        <div class="container d-flex justify-content-between footer-grid">
-            <div class="footer-col">
-                <strong class="title">Get In Touch</strong>
-                <ul>
-                    <li>Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada
-                        magna.
-                    </li>
-                    <li><i class="fas fa-map-marker-alt"></i> Moonshine Street No: 14/05 Light City, Jupiter</li>
-                    <li><i class="fas fa-tty"></i> 0247 541 65 87</li>
-                    <li><i class="fas fa-envelope"></i> support@longwave.com</li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <strong class="title">Twitter</strong>
-                <ul>
-                    <li><i class="fab fa-twitter"></i> Aenean lacinia bibendum nulla sed leo posuere erat a
-                        ante venenatis dapibus posuere velit aliquet.
-                    </li>
-                    <li><i class="fab fa-twitter"></i> Donec ullamcorper metus auctor fringilla. Nullam quis
-                        risus eget.
-                    </li>
-                    <li><i class="fab fa-twitter"></i> Vestibulum id ligula porta euismod semper. Maecenas
-                        faucibus mollis.
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <strong class="title">Popular Posts</strong>
-                <ul>
-                    <li>Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.
-                    </li>
-                    <li>Scelerisque nisl consectetur et.</li>
-                    <li>Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus
-                        commodo,
-                        tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <strong class="title">About Us</strong>
-                <ul>
-                    <li>Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat
-                        porttitor ligula, eget lacinia odio sem nec elit.
-                    </li>
-                    <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus curabitur
-                        blandit
-                    </li>
-                </ul>
+        <div class="container footer-grid">
+            <div class="d-flex flex-wrap footer-column-container">
+                <div class="footer-col">
+                    <strong class="title">Get In Touch</strong>
+                    <div class="icon-plus"><i class="fas fa-plus"></i></div>
+                    <ul class="footer-content">
+                        <li>Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem
+                            malesuada
+                            magna.
+                        </li>
+                        <li><i class="fas fa-map-marker-alt"></i>
+                            <address>Moonshine Street No: 14/05 Light City, Jupiter</address>
+                        </li>
+                        <li><i class="fas fa-tty"></i> <a href="tel:03008366719">0247 541 65 87</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:iftikhar@rebeltechnology.io">support@longwave.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <strong class="title">Twitter</strong>
+                    <div class="icon-plus"><i class="fas fa-plus"></i></div>
+                    <ul class="footer-content">
+                        <li><i class="fab fa-twitter"></i> Aenean lacinia bibendum nulla sed leo posuere erat a
+                            ante venenatis dapibus posuere velit aliquet.
+                        </li>
+                        <li><i class="fab fa-twitter"></i> Donec ullamcorper metus auctor fringilla. Nullam quis
+                            risus eget.
+                        </li>
+                        <li><i class="fab fa-twitter"></i> Vestibulum id ligula porta euismod semper. Maecenas
+                            faucibus mollis.
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <strong class="title">Popular Posts</strong>
+                    <div class="icon-plus"><i class="fas fa-plus"></i></div>
+                    <ul class="footer-content">
+                        <li>Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.
+                        </li>
+                        <li>Scelerisque nisl consectetur et.</li>
+                        <li>Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus
+                            commodo,
+                            tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <strong class="title">About Us</strong>
+                    <div class="icon-plus"><i class="fas fa-plus"></i></div>
+                    <ul class="footer-content">
+                        <li>Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi
+                            erat
+                            porttitor ligula, eget lacinia odio sem nec elit.
+                        </li>
+                        <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus
+                            curabitur
+                            blandit
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div id="footer-copyright">

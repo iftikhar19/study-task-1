@@ -2,18 +2,18 @@
 #header{
   background-color: $header-bg-color;
   .header-flex{
-    padding: 16px 0;
+    padding: 16px 15px;
   }
   .logo{
     width: 130px;
   }
   #nav{
+    display: block;
     ul{
       list-style: none;
       li{
-        margin: 0 20px;
+        margin: 0 0 0 20px;
         a{
-          text-decoration: none;
           color: $nav-link-color;
           font-size: 16px;
           text-transform: uppercase;
@@ -23,6 +23,49 @@
           }
         }
       }
+    }
+  }
+  i{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .sidenav{
+    height: 100%;
+    position: fixed;
+    z-index: 400;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    background-color: $footer-bg-color;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    a{
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 20px;
+      color: $sidebar-text-color;
+      display: block;
+      transition: 0.3s;
+
+      &:hover{
+        color: $nav-link-hover-color;
+      }
+    }
+    .closebtn{
+      position: absolute;
+      top: -10px;
+      right: 0;
+      font-size: 30px;
+      margin-left: 50px;
+
+      &:hover{
+        color: $nav-link-hover-color;
+      }
+    }
+    &.sidenav-show{
+      left: 0;
     }
   }
 }
@@ -40,6 +83,8 @@
     flex-direction: column;
     max-width: 1140px;
     margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
     height: 100%;
     h1{
       font-size: 40px;
@@ -48,35 +93,13 @@
     }
     h2{
       font-size: 32px;
-      text-align: center;
       color: $banner-sub-heading-color;
       margin-bottom: 10px;
-    }
-    .btn-primary{
-      background-color: $banner-btn-bg-color;
-      color: $banner-btn-text-color;
-      padding: 10px 10px;
-      border: 1px solid $banner-btn-bg-color;
-      outline: none;
-      border-radius: 2px;
-      font-size: 14px;
-      margin: 16px auto;
-      display: block;
-      cursor: pointer;
-      text-transform: uppercase;
-      &:hover{
-        background-color: $banner-btn-bg-hover-color;
-        color: $banner-btn-text-hover-color;
-        border: 1px solid $banner-btn-bg-hover-color;
-        transition: all .5s;
-      }
     }
   }
 }
 
 .services-section{
-  display: flex;
-  justify-content: space-between;
   border-bottom: 1px solid $services-border-color;
   margin-bottom: 40px;
   .col{
@@ -103,19 +126,17 @@
 }
 
 .section-work{
-  margin-bottom: 40px;
   h3{
     font-size: 18px;
     color: $services-heading-color;
     margin-bottom: 40px;
   }
   &-grid{
+    margin: 0 -5px;
     .col{
+      margin-bottom: 40px;
       flex-basis: 33.33%;
-      padding-left: 10px;
-      &:first-child{
-        padding-left: 0;
-      }
+      padding: 0 5px;
     }
     img{
       height: 280px;
@@ -148,11 +169,15 @@
   padding: 50px 0;
   .footer-grid{
     border-bottom: 1px solid $services-border-color;
+    margin-bottom: 50px;
+    .footer-column-container{
+      margin: 0 -20px;
+    }
     .footer-col{
       flex-basis: 25%;
-      padding-left: 30px;
-      &:first-child{
-        padding-left: 0;
+      padding: 0 20px;
+      .icon-plus{
+        display: none;
       }
       .title{
         font-size: 18px;
@@ -167,6 +192,9 @@
           padding-bottom: 25px;
           display: flex;
           font-weight: 300;
+          a{
+            color: $footer-text-color;
+          }
           span{
             display: block;
             padding-top: 9px;
@@ -194,6 +222,143 @@
     max-width: 1140px;
     margin: 0 auto;
     color: $footer-text-color;
-    padding-top: 50px;
+    padding: 0 15px;
   }
 }
+
+@media (max-width: 1030px) {
+  .banner-centering{
+    h1 {
+      font-size: 32px;
+    }
+    h2{
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 854px) {
+  #footer{
+    .footer-grid{
+      .footer-column-container{
+        margin: 0 -10px;
+      }
+      .footer-col{
+        flex-basis: 25%;
+        padding: 0 10px;
+      }
+    }
+  }
+  .banner{
+    height: calc(80vh - 62px);
+  }
+  .banner-centering{
+    h1 {
+      font-size: 24px;
+    }
+    h2{
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 728px) {
+  .banner-centering{
+    h1 {
+      font-size: 24px;
+    }
+    h2{
+      font-size: 18px;
+    }
+  }
+  #header{
+    #nav{
+      display: none;
+    }
+    i{
+      display: block;
+    }
+  }
+  .services-section{
+    .col{
+      flex-basis: 50%;
+    }
+  }
+  .section-work-grid{
+    .col{
+      flex-basis: 50%;
+    }
+  }
+  #footer{
+    .footer-grid{
+      .footer-col{
+       flex-basis: 50%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  #header{
+    .logo{
+      width: 100px;
+    }
+  }
+  .banner{
+    height: calc(52vh - 62px);
+  }
+  .banner-centering{
+    h1 {
+      font-size: 18px;
+    }
+    h2{
+      font-size: 14px;
+    }
+  }
+  .services-section{
+    .col{
+      flex-basis: 100%;
+    }
+  }
+  .section-work-grid{
+    .col{
+      flex-basis: 100%;
+      padding-left: 0;
+    }
+  }
+  #footer{
+    padding: 30px 0;
+    .footer-grid{
+      margin: 0 0 15px;
+      .footer-column-container{
+        margin: 0;
+      }
+      .footer-col{
+        position: relative;
+        flex-basis: 100%;
+        margin-bottom: 15px;
+        padding: 0;
+        .icon-plus{
+          display: block;
+          color: $banner-btn-text-color;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+        .footer-content{
+          display: none;
+        }
+        .title{
+          color: $banner-btn-text-color;
+        }
+      }
+    }
+    &-copyright{
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
