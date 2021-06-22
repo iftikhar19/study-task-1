@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
-
+@import "variables";
 $roboto-slab: 'Roboto Slab', serif;
 $open-sans: 'Open Sans', sans-serif;
 
@@ -13,12 +13,11 @@ $open-sans: 'Open Sans', sans-serif;
 
 #wrapper {
   width: 100%;
-  height: 100%;
   position: relative;
   overflow: hidden;
 }
 
-#main{
+#main {
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -28,6 +27,7 @@ $open-sans: 'Open Sans', sans-serif;
 body {
   font-family: $roboto-slab;
   margin: 0;
+  min-width: 320px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
@@ -37,25 +37,53 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 a {
   text-decoration: none;
+  color: $nav-link-color;
 }
 
 h1, h2, p, button, a {
   font-family: $roboto-slab;
+}
+address{
+  font-style: inherit;
+}
+.btn-primary{
+  background-color: $banner-btn-bg-color;
+  color: $banner-btn-text-color;
+  padding: 10px 10px;
+  border: 1px solid $banner-btn-bg-color;
+  outline: none;
+  border-radius: 2px;
+  font-size: 14px;
+  margin: 16px auto;
+  display: block;
+  cursor: pointer;
+  text-transform: uppercase;
+  &:hover{
+    background-color: $banner-btn-bg-hover-color;
+    color: $banner-btn-text-hover-color;
+    border: 1px solid $banner-btn-bg-hover-color;
+    transition: all .5s;
+  }
 }
 
 .d-flex {
   display: flex;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .justify-content-between {
   justify-content: space-between;
 }
 
-.justify-content-space-between{
+.justify-content-space-between {
   justify-content: space-between;
 }
 
