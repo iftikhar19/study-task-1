@@ -137,25 +137,27 @@
       margin-bottom: 40px;
       flex-basis: 33.33%;
       padding: 0 5px;
-    }
-    img{
-      height: 280px;
-      object-fit: cover;
-    }
-    h4{
-      font-size: 18px;
-      color: $services-heading-color;
-      padding: 18px 0;
-    }
-    h5{
-      font-size: 13px;
-      color: $work-sub-heading-color;
-      padding-bottom: 15px;
-    }
-    p{
-      font-size: 14px;
-      color: $body-text-color;
-      line-height: 30px;
+      img{
+        height: 280px;
+        object-fit: cover;
+      }
+      .col-content{
+        h4{
+          font-size: 18px;
+          color: $services-heading-color;
+          padding: 18px 0;
+        }
+        h5{
+          font-size: 13px;
+          color: $work-sub-heading-color;
+          padding-bottom: 15px;
+        }
+        p{
+          font-size: 14px;
+          color: $body-text-color;
+          line-height: 30px;
+        }
+      }
     }
   }
 }
@@ -307,6 +309,7 @@
   }
   .banner{
     height: calc(52vh - 62px);
+    margin-bottom: 30px;
   }
   .banner-centering{
     h1 {
@@ -319,6 +322,11 @@
   .services-section{
     .col{
       flex-basis: 100%;
+      margin-bottom: 30px;
+      img{
+        width: 80px;
+        height: 80px;
+      }
     }
   }
   .section-work-grid{

@@ -3,6 +3,37 @@
 .bf-testimonial-slick{
     margin-bottom: 0 !important;
 }
+.slide-arrow{
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.prev-arrow{
+    left: -40px;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 15px solid #113463;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.next-arrow{
+    right: -40px;
+    width: 0;
+    height: 0;
+    border-right: 0 solid transparent;
+    border-left: 15px solid #113463;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
 .bf-testimonial-slick-single{
     color:#fff;
     text-align: center;
@@ -33,21 +64,6 @@
     text-align: center;
     color: #a1a1a1;
 }
-.bf-testimonial-author-info{}
-.bf-testimonial-author-info .author-name h4{
-    opacity: 0.6;
-    font-size: 15px;
-    font-weight: 900;
-    line-height: 1em;
-    text-align: center;
-    color: #ffffff;
-}
-.bf-testimonial-author-info .author-designation h5{
-    opacity: 0.3;
-    font-size: 15px;
-    line-height: 1em;
-    color: #ffffff;
-}
 
 /* Testimonial Spacing */
 .bf-testimonial-icon {
@@ -59,9 +75,6 @@
 .bf-testimonial-message {
     padding: 0 50px;
     margin-bottom: 45px;
-}
-.bf-testimonial-author-info .author-name {
-    margin-bottom: 10px;
 }
 @media only screen and (max-width: 1367px){
     .bf-testimonial-slick-single{
@@ -76,7 +89,21 @@
         padding: 20px;
     }
     .bf-testimonial-message {
-        padding: 0px;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 576px){
+    .bf-testimonial-message p{
+        font-size: 17px;
+    }
+    .bf-testimonial-title {
+        margin-bottom: 26px;
+    }
+    .bf-testimonial-title i{
+        font-size: 30px;
+    }
+    .bf-testimonial-message {
+        margin-bottom: 15px;
     }
 }
 
