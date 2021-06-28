@@ -1,19 +1,29 @@
-$nav-link-color:#000;
-$nav-link-hover-color:#33c0a5;
-$header-bg-color:#e5e5e5;
-$banner-heading-color:#f3f3f3;
-$banner-sub-heading-color:#a8a8a8;
-$banner-btn-bg-color:#3f8dbf;
-$banner-btn-bg-hover-color:#fff;
-$banner-btn-text-color:#fff;
-$banner-btn-text-hover-color:#3f8dbf;
-$services-heading-color:#4e4e4e;
-$services-border-color:#6b6767;
-$body-text-color:#616161;
-$work-sub-heading-color:#a8a8a8;
-$work-sub-heading-color:#a8a8a8;
-$footer-heading-color:#6c6c6c;
-$footer-text-color:#cacaca;
-$footer-bg-color:#000;
-$footer-icon-color:#a89574;
-$sidebar-text-color:#818181;
+body{
+  --body-bg-color:#fff;
+  --nav-link-color:#000;
+  --nav-link-hover-color:#33c0a5;
+  --header-bg-color:#e5e5e5;
+  --banner-heading-color:#f3f3f3;
+  --banner-sub-heading-color:#a8a8a8;
+  --banner-btn-bg-color:#3f8dbf;
+  --banner-btn-bg-hover-color:#fff;
+  --banner-btn-text-color:#fff;
+  --banner-btn-text-hover-color:#3f8dbf;
+  --services-heading-color:#4e4e4e;
+  --services-border-color:#6b6767;
+  --body-text-color:#616161;
+  --work-sub-heading-color:#a8a8a8;
+  --work-sub-heading-color:#a8a8a8;
+  --footer-heading-color:#6c6c6c;
+  --footer-text-color:#cacaca;
+  --footer-bg-color:#000;
+  --footer-icon-color:#a89574;
+  --sidebar-text-color:#818181;
+  --testmonial-bg-color:#e5e5e5;
+}
+
+body.dark-theme{
+  --nav-link-color:#fff;
+  --header-bg-color:#000;
+  --body-bg-color:#A9A9A9;
+}

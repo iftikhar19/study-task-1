@@ -36,4 +36,9 @@ $(document).ready(function () {
         $(this).find('i').toggleClass('fa-minus');
         $(this).find('i').toggleClass('fa-plus');
     });
+
+    $('#switcher-theme').click(function (){
+    $('body').toggleClass('dark-theme');
+
+    });
 });

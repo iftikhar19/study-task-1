@@ -1,6 +1,6 @@
 @import "variables";
 #header{
-  background-color: $header-bg-color;
+  background-color: var(--header-bg-color);
   .header-flex{
     padding: 16px 15px;
   }
@@ -14,18 +14,18 @@
       li{
         margin: 0 0 0 20px;
         a{
-          color: $nav-link-color;
+          color: var(--nav-link-color);
           font-size: 16px;
           text-transform: uppercase;
           &:hover{
-            color: $nav-link-hover-color;
+            color: var(--nav-link-hover-color);
             transition: all .5s;
           }
         }
       }
     }
   }
-  i{
+  .hamburger-menu{
     display: none;
     font-size: 24px;
     cursor: pointer;
@@ -37,7 +37,7 @@
     top: 0;
     left: -50%;
     width: 50%;
-    background-color: $footer-bg-color;
+    background-color: var(--footer-bg-color);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -45,12 +45,12 @@
       padding: 8px 8px 8px 32px;
       text-decoration: none;
       font-size: 20px;
-      color: $sidebar-text-color;
+      color: var(--sidebar-text-color);
       display: block;
       transition: 0.3s;
 
       &:hover{
-        color: $nav-link-hover-color;
+        color: var(--nav-link-hover-color);
       }
     }
     .closebtn{
@@ -61,7 +61,7 @@
       margin-left: 50px;
 
       &:hover{
-        color: $nav-link-hover-color;
+        color: var(--nav-link-hover-color);
       }
     }
     &.sidenav-show{
@@ -88,19 +88,19 @@
     height: 100%;
     h1{
       font-size: 40px;
-      color: $banner-heading-color;
+      color: var(--banner-heading-color);
       margin-bottom: 10px;
     }
     h2{
       font-size: 32px;
-      color: $banner-sub-heading-color;
+      color: var(--banner-sub-heading-color);
       margin-bottom: 10px;
     }
   }
 }
 
 .services-section{
-  border-bottom: 1px solid $services-border-color;
+  border-bottom: 1px solid var(--services-border-color);
   margin-bottom: 40px;
   .col{
     flex-basis: 25%;
@@ -108,12 +108,12 @@
     margin-bottom: 50px;
     h3{
       font-size: 18px;
-      color: $services-heading-color;
+      color: var(--services-heading-color);
       padding: 15px 0;
     }
     p{
       font-size: 14px;
-      color: $body-text-color;
+      color: var(--body-text-color);
     }
     img{
       margin: 0 auto;
@@ -128,7 +128,7 @@
 .section-work{
   h3{
     font-size: 18px;
-    color: $services-heading-color;
+    color: var(--services-heading-color);
     margin-bottom: 40px;
   }
   &-grid{
@@ -144,17 +144,17 @@
       .col-content{
         h4{
           font-size: 18px;
-          color: $services-heading-color;
+          color: var(--services-heading-color);
           padding: 18px 0;
         }
         h5{
           font-size: 13px;
-          color: $work-sub-heading-color;
+          color: var(--work-sub-heading-color);
           padding-bottom: 15px;
         }
         p{
           font-size: 14px;
-          color: $body-text-color;
+          color: var(--body-text-color);
           line-height: 30px;
         }
       }
@@ -163,14 +163,14 @@
 }
 
 .section-testmonials{
-  background-color: $header-bg-color;
+  background-color: var(--testmonial-bg-color);
 }
 
 #footer{
-  background-color: $footer-bg-color;
+  background-color: var(--footer-bg-color);
   padding: 50px 0;
   .footer-grid{
-    border-bottom: 1px solid $services-border-color;
+    border-bottom: 1px solid var(--services-border-color);
     margin-bottom: 50px;
     .footer-column-container{
       margin: 0 -20px;
@@ -183,26 +183,26 @@
       }
       .title{
         font-size: 18px;
-        color: $footer-heading-color;
+        color: var(--footer-heading-color);
       }
       ul{
         list-style: none;
         margin-top: 30px;
         li{
-          color: $footer-text-color;
+          color: var(--footer-text-color);
           font-size: 14px;
           padding-bottom: 25px;
           display: flex;
           font-weight: 300;
           a{
-            color: $footer-text-color;
+            color: var(--footer-text-color);
           }
           span{
             display: block;
             padding-top: 9px;
           }
           i{
-            color: $footer-icon-color;
+            color: var(--footer-text-color);
             font-size: 10px;
             margin: 5px 6px 0 0;
           }
@@ -210,10 +210,10 @@
       }
       p{
         font-size: 14px;
-        color: $footer-text-color;
+        color: var(--footer-text-color);
         padding-bottom: 10px;
         i{
-          color: $footer-icon-color;
+          color: var(--footer-icon-color);
           font-size: 10px;
           margin: 5px 6px 0 0;
         }
@@ -223,7 +223,7 @@
   &-copyright{
     max-width: 1140px;
     margin: 0 auto;
-    color: $footer-text-color;
+    color: var(--footer-text-color);
     padding: 0 15px;
   }
 }
@@ -277,7 +277,7 @@
     #nav{
       display: none;
     }
-    i{
+    .hamburger-menu{
       display: block;
     }
   }
@@ -349,7 +349,7 @@
         padding: 0;
         .icon-plus{
           display: block;
-          color: $banner-btn-text-color;
+          color: var(--banner-btn-text-color);
           position: absolute;
           top: 0;
           right: 0;
@@ -358,7 +358,7 @@
           display: none;
         }
         .title{
-          color: $banner-btn-text-color;
+          color: var(--banner-btn-text-color);
         }
       }
     }
