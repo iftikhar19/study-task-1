@@ -17,7 +17,9 @@ $(document).ready(function () {
         centerPadding: '20%',
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+        nextArrow: '<button class="slide-arrow next-arrow"></button>',
+        // arrows: true,
         dots: false,
         draggable: true,
         responsive: [{

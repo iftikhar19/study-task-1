@@ -227,21 +227,21 @@ select {
     margin-bottom: 40px;
     flex-basis: 33.33%;
     padding: 0 5px; }
-  .section-work-grid img {
-    height: 280px;
-    object-fit: cover; }
-  .section-work-grid h4 {
-    font-size: 18px;
-    color: #4e4e4e;
-    padding: 18px 0; }
-  .section-work-grid h5 {
-    font-size: 13px;
-    color: #a8a8a8;
-    padding-bottom: 15px; }
-  .section-work-grid p {
-    font-size: 14px;
-    color: #616161;
-    line-height: 30px; }
+    .section-work-grid .col img {
+      height: 280px;
+      object-fit: cover; }
+    .section-work-grid .col .col-content h4 {
+      font-size: 18px;
+      color: #4e4e4e;
+      padding: 18px 0; }
+    .section-work-grid .col .col-content h5 {
+      font-size: 13px;
+      color: #a8a8a8;
+      padding-bottom: 15px; }
+    .section-work-grid .col .col-content p {
+      font-size: 14px;
+      color: #616161;
+      line-height: 30px; }
 
 .section-testmonials {
   background-color: #e5e5e5; }
@@ -333,13 +333,18 @@ select {
   #header .logo {
     width: 100px; }
   .banner {
-    height: calc(52vh - 62px); }
+    height: calc(52vh - 62px);
+    margin-bottom: 30px; }
   .banner-centering h1 {
     font-size: 18px; }
   .banner-centering h2 {
     font-size: 14px; }
   .services-section .col {
-    flex-basis: 100%; }
+    flex-basis: 100%;
+    margin-bottom: 30px; }
+    .services-section .col img {
+      width: 80px;
+      height: 80px; }
   .section-work-grid .col {
     flex-basis: 100%;
     padding-left: 0; }
